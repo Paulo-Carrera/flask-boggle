@@ -1,0 +1,38 @@
+{% extends 'base.html' %}
+
+{% block title %}Game Page{% endblock %}
+
+{% block content %}
+<div class="container">
+    <h1>Welcome, {{ username }}</h1>
+    <h2>Let's play Boggle!</h2>
+
+    <!-- Use jinja to display boggle board to user -->
+    <table class="gameboard">
+        {% for row in board %}
+        <tr>
+            {% for letter in row %}
+            <td>{{ letter }}</td>
+            {% endfor %}
+        </tr>
+        {% endfor %}
+    </table>
+
+    <form id="guess-form">
+        <input type="text" name="guess" placeholder="Enter your guess" id="guess-input">
+        <button type="submit">Submit Guess</button>
+    </form>
+
+    <!-- Result, Score and Timer displays: -->
+    <div id="result"></div>
+    <div id="score">Score: 0</div>
+    <div id="timer">Time Left: 60s</div>    
+    <div id="plays">Times Played: {{ plays }}</div>
+    <div id="highscore">High Score: {{ highscore }}</div>
+
+    <!-- Play Again button -->
+    <button id="play-again" style="display: none;">Play Again</button>
+</div>
+
+<script src="{{ url_for('static', filename='game.js') }}"></script>
+{% endblock %}

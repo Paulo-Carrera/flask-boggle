@@ -1,0 +1,114 @@
+body {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    background-color: lightslategray;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    box-sizing: border-box;
+}
+
+.container {
+    text-align: center;
+    background-color: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 90%;
+    max-width: 600px;
+    box-sizing: border-box;
+}
+
+h1, h2 {
+    color: black;
+    margin: 0 0 20px;
+}
+
+.gameboard {
+    margin: 20px auto;
+    border-collapse: collapse;
+    width: 100%; /* Make the table take the full width of the container */
+}
+
+.gameboard td {
+    background-color: #fff;
+    border: 1px solid #ccc;
+    padding: 20px;
+    width: calc(20% - 2px); /* Ensures each cell takes 20% of the table's width */
+    height: 50px; /* Ensures consistent height */
+    text-align: center;
+    font-size: 24px;
+    box-sizing: border-box; /* Include padding and border in the element's total width and height */
+}
+
+#timer, #score, #result, #plays, #highscore {
+    font-size: 18px;
+    margin-top: 20px;
+}
+
+form {
+    margin: 20px auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#guess-input {
+    padding: 10px;
+    font-size: 16px;
+    margin-bottom: 10px;
+    width: 80%;
+}
+
+button {
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    width: 50%;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+.play-again{
+    margin-top:15px;
+}
+
+.container {
+    text-align: center;
+    padding: 20px;
+}
+
+h1 {
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+.login-form {
+    display: inline-block;
+}
+
+.username-input {
+    padding: 10px;
+    font-size: 16px;
+    margin-bottom: 10px;
+    width: 200px;
+}
+
+.start-button {
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+}
+
+.start-button:hover {
+    background-color: #0056b3;
+}

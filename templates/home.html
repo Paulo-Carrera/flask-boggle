@@ -1,0 +1,14 @@
+{% extends 'base.html' %}
+
+{% block title %} Home Page {% endblock %}
+
+{% block content %}
+<div class="container">
+    <h1>Welcome to Boggle!</h1>
+
+    <form action="/" method="post" class="login-form">
+        <input type="text" name="username" placeholder="Enter your username" class="username-input">
+        <button type="submit" class="start-button">Start</button>
+    </form>
+</div>
+{% endblock %}
